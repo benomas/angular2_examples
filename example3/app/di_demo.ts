@@ -39,6 +39,8 @@ export class DiDemo
   }
   removeDetail(detail:Detail)
   {
+    //la funcion filter recorre un array evaluan la expresion, si el resultado es verdadero, el elemento se conserva, de lo contrario se remueve
+    //al utilizar el operador => en una funcion anonima, estamos compartiendo el contexto del objeto padre y el objeto hijo(funcion anonima)
     this.details = this.details.filter((d) => d !== detail);
   }
 }
